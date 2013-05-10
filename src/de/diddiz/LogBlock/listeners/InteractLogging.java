@@ -56,6 +56,8 @@ public class InteractLogging extends LoggingListener
 					if (wcfg.isLogging(Logging.DIODEINTERACT) && event.getAction() == Action.RIGHT_CLICK_BLOCK)
 						consumer.queueBlock(player.getName(), loc, typeId, typeId, blockData);
 					break;
+				default:
+					break;
 			}
 		}
 	}
